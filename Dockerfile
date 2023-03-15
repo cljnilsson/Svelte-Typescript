@@ -3,8 +3,8 @@ ARG env
 # install dependencies
 WORKDIR /app
 
-COPY ./ .
-COPY ../package.json .
+COPY ./src .
+COPY ./package.json .
 
 RUN npm i
 
