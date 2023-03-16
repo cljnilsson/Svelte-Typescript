@@ -11,7 +11,7 @@ RUN npm i
 # Copy all local files into the image.
 COPY . .
 
-RUN npm run build
+RUN npm run buildprod
 
 FROM node:16
 
