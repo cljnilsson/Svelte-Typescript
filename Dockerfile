@@ -11,11 +11,7 @@ RUN npm i
 # Copy all local files into the image.
 COPY . .
 
-RUN if [ "$env" = "production" ] ; then \
-    npm run buildprod; \
-else \
-    npm run build; \
-fi
+RUN npm run build
 
 FROM node:16
 
